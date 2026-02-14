@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Prints all letters except q and e
  *
  * Return: Always (Success)
@@ -16,8 +16,6 @@ int main(void)
 		putchar(c);
 		}
 	}
-
 	putchar('\n');
-	
 	return (0);
-}	
+}
