@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
+ * main - Prints alphabet in lowercase and uppercase
  *
- * main - Prints alphabet in reverse
- *
- * return - Always success
+ * Return: Always (Success)
  */
 int main(void)
 {
@@ -20,7 +19,6 @@ int main(void)
 	{
 		putchar(C);
 	}
-	
 	putchar('\n');
 
 	return (0);
