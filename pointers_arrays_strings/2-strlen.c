@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * int _strlen - Returns length of string
+ * _strlen - Returns length of string
  *
  * @s: string to be passed
+ *
+ * Return: Length of string
  */
 
 int _strlen(char *s)
@@ -14,6 +16,6 @@ int _strlen(char *s)
 	{
 		c++;
 	}
-	
+
 	return (c);
 }
