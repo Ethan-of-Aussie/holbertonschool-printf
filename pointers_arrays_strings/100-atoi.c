@@ -24,7 +24,7 @@ int _atoi(char *s)
 		{
 			start = 1;
 			result = result * 10 + (s[i] - '0');
-			
+
 			if (sign == 1 && result > INT_MAX)
 			{
 				return (INT_MAX);
@@ -34,11 +34,11 @@ int _atoi(char *s)
 				return (INT_MIN);
 			}
 		}
-		else if(start == 1)
+		else if (start == 1)
 		{
 			break;
 		}
 	}
 
-	return (int)(result * sign);
+	return ((int)(result * sign));
 }
