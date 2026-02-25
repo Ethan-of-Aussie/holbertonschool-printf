@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strchr(char *s, char c)
+ * _strchr - Function that located character in string
  *
  * @s: Traget string
  *
