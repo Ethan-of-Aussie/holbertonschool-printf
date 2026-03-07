@@ -48,6 +48,7 @@ char *dup(char *str)
  *
  * @owner: Owner of new dog
  *
+ * Return: New dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -75,5 +76,3 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	return (dog);
 }
-
-
