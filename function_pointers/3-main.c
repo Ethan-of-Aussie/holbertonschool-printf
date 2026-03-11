@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
- 
 
 /**
  * main - Perfroms simple opereations
@@ -10,10 +9,6 @@
  * @argc: Argument counter
  *
  * @argv: Argument vector
- *
- * @num1: First number
- *
- * @num2: Second number
  *
  * Return: Error=argument is wrong/none from option/divide by 0, result
  */
@@ -27,7 +22,7 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 
 	num1 = atoi(argv[1]);
@@ -38,15 +33,15 @@ int main(int argc, char *argv[])
 	if (f == NULL)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 
 	if (num2 == 0 && (strcmp(argv[2], "/") == 0 || strcmp(argv[2], "%") == 0))
 	{
 		printf("Error\n");
-		exit (100);
+		exit(100);
 	}
-	
+
 	printf("%d\n", f(num1, num2));
 
 	return (0);
