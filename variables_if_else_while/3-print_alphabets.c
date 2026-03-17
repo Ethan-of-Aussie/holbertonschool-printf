@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+/**
+ * main - Prints alphabet in lowercase and uppercase
+ *
+ * Return: Always (Success)
+ */
+int main(void)
+{
+	char c;
+	char C;
+
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		putchar(c);
+	}
+
+	for (C = 'A'; C <= 'Z'; C++)
+	{
+		putchar(C);
+	}
+	putchar('\n');
+
+	return (0);
+}
