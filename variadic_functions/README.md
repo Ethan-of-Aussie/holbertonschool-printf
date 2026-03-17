@@ -1,1 +1,0 @@
-Variadric Function
