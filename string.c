@@ -1,15 +1,20 @@
 #include "main.h"
 
-void _char(va_list args)
+int _char(va_list args)
 {
-	char c = va_arg(args, int);
+	char c;
+	c = va_arg(args, int);
 	write(1, &c, 1);
+	
+	return (1);
 }
 
-void _string(va_list args)
+int _string(va_list args)
 {
 	int i;
-	char *str = va_arg(args, char*);
+	char *str;
+	
+	str = va_arg(args, char*);
 	if (str == NULL)
 	{
 		str = "(null)";
@@ -19,4 +24,6 @@ void _string(va_list args)
 	{
 		write(1, &str[i], 1);
 	}
+
+	return (i);
 }
