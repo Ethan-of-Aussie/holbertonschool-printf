@@ -11,7 +11,7 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int i;
+	int i, count = 0;
 
 	va_start(args, format);
 
@@ -21,33 +21,35 @@ int _printf(const char *format, ...)
 		{
 			i++;
 
+			if (format[i] == '\0')
+				return (-0);
+
 			switch (format[i])
 			{
 				case 'c':
-					_char(args);
+					count += _char(args);
 					break;
 				case 's':
-					_string(args);
+					count += _string(args);
 					break;
 				/**
+				*supposedly d and i share the _int function
 				case 'd':
-					_int(args);
-					break;
 				case 'i':
-					_inout(args);
+					count += _int(args);
 					break;
 				*/
 				default:
-					write(1, &format[i - 1], 1);
-					write(1, &format[i], 1);
+					count += write(1, "%", 1);
+					count += write(1, &format[i], 1);
 			}
 		}
 		else
 		{
-			write(1, &format[i], 1);
+			count += write(1, &format[i], 1);
 		}
 	}
 
 	va_end(args);
-	return (0);
+	return (count);
 }	
