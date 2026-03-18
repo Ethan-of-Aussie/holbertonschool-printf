@@ -1,6 +1,9 @@
 #include "main.h"
 /**
+ *reverse_string - reverse the int so its properly printed
  *
+ *@str: the string
+ *@length: length of the string
  */
 void reverse_string(char *str, int length)
 {
