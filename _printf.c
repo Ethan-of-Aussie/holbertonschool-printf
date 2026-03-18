@@ -39,6 +39,9 @@ int _printf(const char *format, ...)
 					count += _int(args);
 					break;
 				*/
+				case '%':
+					count += write(1, "%", 1);
+					break;
 				default:
 					count += write(1, "%", 1);
 					count += write(1, &format[i], 1);
