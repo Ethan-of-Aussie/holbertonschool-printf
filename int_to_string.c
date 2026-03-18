@@ -31,7 +31,7 @@ int int_to_string(int num, char *buffer)
         buffer[i++] = '-';
     }
     buffer[i] = '\0';
-    reverse_string(buffer, i)
+    reverse_string(buffer, i);
 
     return (i);
 }
