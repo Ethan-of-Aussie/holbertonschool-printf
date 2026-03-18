@@ -1,6 +1,9 @@
 #include "main.h"
 /**
- *
+ *int_to_string - convert ints into strings
+ *@num: The number to be printed
+ *@buffer: storage
+ *Return: The reversed the string
  */
 int int_to_string(int num, char *buffer)
 {
