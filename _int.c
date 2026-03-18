@@ -1,5 +1,7 @@
 #include "main.h"
 /**
+ *_int - list of numbers to input
+ *@args - holding ints to print
  */
 void _int(va_list args)
 {
