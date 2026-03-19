@@ -9,7 +9,7 @@ _printf - custom implementation of the printf function
 The
 .B _printf()
 function produces output according to a
-.I format
+.B format
 string and a variable number of arguments.
 
 Format specifiers include:
