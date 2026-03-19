@@ -10,7 +10,7 @@ int _printf(const char *format, ...);
 int _char(va_list args);
 int _string(va_list args);
 int _int(va_list args);
-int int_to_string(int num, char *buffer);
+int int_to_string(long num, char *buffer);
 void reverse_string(char *str, int length);
 /*void _inout(va_list args);*/
 #endif
