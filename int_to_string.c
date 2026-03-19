@@ -5,7 +5,7 @@
  *@buffer: storage
  *Return: The reversed the string
  */
-int int_to_string(int num, char *buffer)
+int int_to_string(long num, char *buffer)
 {
     int i = 0;
     int is_negative = 0;
