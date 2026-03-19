@@ -38,12 +38,12 @@ int _printf(const char *format, ...)
 					count += _string(args);
 					break;
 				/**
-				*supposedly d and i share the _int function
+				*supposedly d and i share the _int function*/
 				case 'd':
 				case 'i':
 					count += _int(args);
 					break;
-				*/
+				
 				case '%':
 					count += write(1, "%", 1);
 					break;
