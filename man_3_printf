@@ -1,0 +1,42 @@
+.TH _PRINTF 3 "March 2026" "1.0" "User Commands"
+.SH NAME
+_printf \- Custom made printf function
+.SH SYNOPSIS
+#include "main.h"
+.B int _printf(const char *format, ...);
+.SH DESCRIPTION
+_printf prints output based on the format string.
+.B Format Specifiers:
+.TP
+.B %c
+Prints a single character.
+.TP
+.B %s
+Prints a string of characters or (null) if string is NULL.
+.TP
+.B %d, %i
+Prints integer in decimal notation.
+.TP
+.B %%
+Prints a % sign.
+.SH RETURN VALUE
+_printf returns the number of characters printed, excluding the null byte to end output to strings.
+Returns a negative value when an error occurs.
+.SH EXAMPLES
+.TP
+.B Print a simple string:
+_printf("Hello, World!\n");
+.TP
+.B Print a character:
+_printf("%c\n", 'A');
+.TP
+.B Print a string:
+_printf("%s\n", "Hello");
+.TP
+.B Print an integer:
+_printf("%d\n", 42);
+.TP
+.B Print a percent sign:
+_printf("100%%\n");
+.SH AUTHORS
+Written by Ethan and Sijin
