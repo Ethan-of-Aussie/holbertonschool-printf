@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_int - list of numbers to input
+ *handle_int - list of numbers to input
  *@args - holding ints to print
  */
 int handle_int(va_list args)
