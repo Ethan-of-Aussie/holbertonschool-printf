@@ -21,6 +21,7 @@ int _printf(const char *format, ...);
 int handle_char(va_list args);
 int handle_string(va_list args);
 int handle_int(va_list args);
+int print_percent(va_list args);
 int int_to_string(long num, char *buffer);
 void reverse_string(char *str, int length);
 /*void _inout(va_list args);*/
