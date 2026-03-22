@@ -1,11 +1,11 @@
 #include "main.h"
 
 spec_t specs[] = {
-      {'c', print_char},
-      {'s', print_string},
-      {'d', print_int},
-      {'i', print_int},
-      {'%', print_percent},
+      {'c', handle_char},
+      {'s', handle_string},
+      {'d', handle_int},
+      {'i', handle_int},
+      {'%', handle_percent},
       {0, NULL}
 };
 /**
