@@ -32,10 +32,10 @@ int _printf(const char *format, ...)
 			switch (format[i])
 			{
 				case 'c':
-					count += _char(args);
+					count += handle_char(args);
 					break;
 				case 's':
-					count += _string(args);
+					count += handle_string(args);
 					break;
 				/**
 				*supposedly d and i share the _int function*/
