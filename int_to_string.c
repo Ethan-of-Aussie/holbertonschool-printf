@@ -3,7 +3,7 @@
  *int_to_string - convert ints into strings
  *@num: The number to be printed
  *@buffer: storage
- *Return: The reversed the string
+ *Return: The length
  */
 int int_to_string(long num, char *buffer)
 {
