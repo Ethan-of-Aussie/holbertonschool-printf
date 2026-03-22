@@ -11,6 +11,9 @@ void reverse_string(char *str, int length)
     int end = length - 1;
     char temp;
 
+    if (str[0] == '-')
+        start = 1;
+
     while (start < end)
     {
         temp = str[start];
