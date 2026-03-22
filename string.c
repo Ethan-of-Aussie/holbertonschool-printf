@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _char(va_list args)
+int handle_char(va_list args)
 {
 	char c;
 	c = va_arg(args, int);
@@ -9,7 +9,7 @@ int _char(va_list args)
 	return (1);
 }
 
-int _string(va_list args)
+int handle_string(va_list args)
 {
 	int i;
 	char *str;
