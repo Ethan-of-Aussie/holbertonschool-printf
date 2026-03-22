@@ -5,6 +5,17 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <unistd.h>
+/**
+ * struct specifier - maps a format specifier to a function
+ * @spec: the format character (e.g. 'c', 's', 'd')
+ * @f: pointer to the handler function
+*/
+typedef struct specifier
+{
+char spec;
+int (*f)(va_list);
+} spec_t
+int handle_format(char c, va_list args);
 
 int _printf(const char *format, ...);
 int handle_char(va_list args);
