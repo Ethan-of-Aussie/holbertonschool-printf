@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
 				*supposedly d and i share the _int function*/
 				case 'd':
 				case 'i':
-					count += _int(args);
+					count += handle_int(args);
 					break;
 				
 				case '%':
